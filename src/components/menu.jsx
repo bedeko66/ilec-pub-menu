@@ -21,7 +21,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function Menu(props) {
     const [numPages, setNumPages] = useState(2);
-    const [pageNumber, setPageNumber] = useState(1);
+    // const [pageNumber, setPageNumber] = useState(1);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
@@ -36,7 +36,7 @@ function Menu(props) {
                 <Page pageNumber={1} />
                 <Page pageNumber={2} />
             </Document>
-            <p>Page {pageNumber} of {numPages}</p>
+            {/* <p>Page {pageNumber} of {numPages}</p> */}
         </div>
     );
 }
